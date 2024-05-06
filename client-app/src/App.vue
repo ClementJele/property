@@ -5,8 +5,8 @@
       <b-navbar-brand to="/">Property App</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          
-          <b-nav-item href="#" @click.prevent="login" v-if="!activeUser">Login</b-nav-item>
+          <!-- -->
+          <b-nav-item href="#" @click.prevent="login" v-if="!activeUser" >Login</b-nav-item>
           <b-nav-item href="#" @click.prevent="logout" v-else>Logout</b-nav-item>
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/user-manager">User Management</b-nav-item>
@@ -14,6 +14,8 @@
           <b-nav-item to="/fines">Fines</b-nav-item>
           <b-nav-item to="/notices">Notices</b-nav-item>
           <b-nav-item to="/reports">Reports</b-nav-item>
+          <b-nav-item to="/sign-in">Testing</b-nav-item>
+          <b-nav-item to="/sign-up">Testing signup</b-nav-item>
 
         </b-navbar-nav>
       </b-collapse>
@@ -29,17 +31,20 @@ export default {
   name: 'app',
   data () {
     return {
-      activeUser: null
+      activeUser: null,
+      selectedRole: null
     }
   },
   async created () {
     await this.refreshActiveUser()
+    this.SignIn()
   },
   watch: {
     // everytime a route is changed refresh the activeUser
     '$route': 'refreshActiveUser'
   },
   methods: {
+
     async login () {
       this.$auth.signInWithRedirect()
     },

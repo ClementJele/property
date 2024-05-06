@@ -2,7 +2,7 @@
   "name": "client-app",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Yabiso Wiseman Molefe <molefe.wiseman@gmail.com>",
+  "author": "clement",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

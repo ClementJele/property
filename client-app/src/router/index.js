@@ -6,6 +6,8 @@ import IssueManager from '@/components/IssueManage'
 import UserManager from '@/components/UserManage'
 import Notices from '@/components/Notices'
 import Reports from '@/components/Reports'
+import SignIn from '@/components/SignIn'
+import SignUp from '@/components/SignUp'
 
 Vue.use(Router)
 
@@ -45,6 +47,17 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/sign-in',
+      name: 'SignIn',
+      component: SignIn
+    },
+    {
+      path: '/sign-up',
+      name: 'SignUp',
+      component: SignUp
     }
+
   ]
 })
