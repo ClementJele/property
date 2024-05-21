@@ -13,7 +13,7 @@
           <b-nav-item to="/home">Home</b-nav-item>
           <b-nav-item to="/user-manager">User Management</b-nav-item>
           <b-nav-item to="/issue-manager">Complaints</b-nav-item>
-          <b-nav-item to="/Complaints">View Complaints</b-nav-item>
+          <!-- <b-nav-item to="/Complaints">View Complaints</b-nav-item> -->
           <b-nav-item to="/fines">Fines</b-nav-item>
           <b-nav-item to="/notices">Notices</b-nav-item>
           <b-nav-item to="/reports">Reports</b-nav-item>
