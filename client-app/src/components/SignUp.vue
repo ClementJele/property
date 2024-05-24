@@ -86,7 +86,7 @@
 <script>
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../config/firebase'
-import router from '../router' // Import Vue Router
+import router from '../router' /
 
 export default {
   data () {

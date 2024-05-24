@@ -57,7 +57,7 @@
         try {
           const userCredential = await signInWithEmailAndPassword(auth, this.email, this.password)
           console.log('User logged in:', userCredential.user)
-          // Optionally, you can redirect the user to another page upon successful login
+          
           this.$router.push('/home')
         } catch (error) {
           console.error('Error logging in:', error)
@@ -68,6 +68,6 @@
   </script>
   
   <style>
-  /* Add any additional styles here */
+  
   </style>
   
