@@ -75,7 +75,7 @@
 }
 
 .staff.selected {
-  opacity: 0.7; /* Dim the staff box when selected */
+  opacity: 0.7; 
 }
 </style>
 
