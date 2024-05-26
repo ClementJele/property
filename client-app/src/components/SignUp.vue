@@ -33,10 +33,6 @@
 
             <!-- User details -->
             <form @submit.prevent="signUp">
-              <!-- <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" v-model="username" required>
-              </div> -->
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" v-model="email" required>
@@ -86,7 +82,7 @@
 <script>
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../config/firebase'
-import router from '../router' /
+import router from '../router'
 
 export default {
   data () {
